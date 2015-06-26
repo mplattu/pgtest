@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<meta name=viewport content="user-scalable=no,width=device-width" />
+
+	<link rel="stylesheet" href="jquery.mobile.inline-png-1.4.5.min.css" type="text/css" />
+	<script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
+	
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+			$("#area-message").html("Page init started");
+			
+			$("#button-hello").click(function(e) {
+				$("#area-message").html("Hello World!");
+			});
+			
+			$("#button-clear").click(function(e) {
+				$("#area-message").html(" ");
+			});
+				
+			$("#area-message").html("Page init finished");
+		});
+		
+	</script>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+			<h1>Hello</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<div id="area-message"></div>
+			<a href="#" id="button-hello" class="ui-btn ui-icon-bars ui-btn-icon-left">Hello</a>
+			<a href="#" id="button-clear" class="ui-btn ui-icon-delete ui-btn-icon-left">Clear</a>
+		</div>
+		<div data-role="footer">
+			This is footer
+		</div>
+	</div>
+</body>
+</html>
