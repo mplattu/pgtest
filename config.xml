@@ -22,4 +22,8 @@
 	<gap:platform name="android" />
 	<gap:platform name="winphone" />
 
+	<!-- features are interpreted to permissions -->
+	<!-- network feature is always required -->
+	<feature name="http://api.phonegap.com/1.0/network" />
+
 </widget>
