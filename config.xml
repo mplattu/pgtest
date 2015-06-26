@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "biz.lattu"
+        versionCode = "1" 
+        version     = "0.0.1" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>PhoneGap Hello World</name>
+
+    <description>
+        This is an Hello Word app built using PhoneGap Build. 
+    </description>
+
+    <author href="http://lattu.biz" email="none@lattu.biz">
+        Matti Lattu
+    </author>
+
+	<!-- Specify build platforms -->
+	<!-- <gap:platform name="ios" /> -->
+	<gap:platform name="android" />
+	<gap:platform name="winphone" />
+
+</widget>
