@@ -11,12 +11,36 @@
 	<script type="text/javascript" src="jquery.mobile-1.4.5.min.js"></script>
 	
 	<script type="text/javascript">
+		// Change this to your PGtest AJAX server (srv/server.php)
+		var SERVER_URL = 'http://harkko.lattu.biz/phonegap/server.php';
+		
+		function connect_server () {
+			$("#area-message").html("Message sent to server");
+			
+			$.ajax({
+				url: SERVER_URL,
+				data: {
+					'function': 'status'
+				},
+				dataType: "jsonp",
+				success: function (data) {
+					$("#area-message").html("Server says: "+data.message);
+				},
+				error: function (data, text_status, error_thrown) {
+					$("#area-message").html("AJAX error: "+text_status+", HTTP error: "+error_thrown);
+				}
+			});
+		}
 		
 		$(document).ready(function() {
 			$("#area-message").html("Page init started");
 			
 			$("#button-hello").click(function(e) {
 				$("#area-message").html("Hello World!");
+			});
+			
+			$("#button-ajax").click(function(e) {
+				connect_server();
 			});
 			
 			$("#button-clear").click(function(e) {
@@ -35,7 +59,8 @@
 		</div>
 		<div data-role="main" class="ui-content">
 			<div id="area-message"></div>
-			<a href="#" id="button-hello" class="ui-btn ui-icon-bars ui-btn-icon-left">Hello</a>
+			<a href="#" id="button-hello" class="ui-btn ui-icon-bars ui-btn-icon-left">Hello Local</a>
+			<a href="#" id="button-ajax" class="ui-btn ui-icon-action ui-btn-icon-left">Hello Server</a>
 			<a href="#" id="button-clear" class="ui-btn ui-icon-delete ui-btn-icon-left">Clear</a>
 		</div>
 		<div data-role="footer">
