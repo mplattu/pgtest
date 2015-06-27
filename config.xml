@@ -29,4 +29,11 @@
 	<!-- Default icon -->
 	<icon src="icon.png" />
 	
+	<icon src="icon_android_ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+	<icon src="icon_android_mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+	<icon src="icon_android_hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+	<icon src="icon_android_xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+	<icon src="icon_android_xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+	<icon src="icon_android_xxxhdpi.png" gap:platform="android" gap:qualifier="xxxhdpi" />
+
 </widget>
