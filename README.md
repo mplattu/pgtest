@@ -12,6 +12,10 @@ use public repos.
 5. Give your git repo URL and click pull button.
 6. Wait and you have a downloadable app.
 
+## AJAX Test
+
+The app demonstrates the AJAX connection to a PHP server script (`src/server.php`).
+
 ## Credits
 
 * Application icon http://findicons.com/icon/93539/web_browser?id=358197
