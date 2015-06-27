@@ -1,5 +1,4 @@
-# pgtest
-PhoneGap/jQuery Mobile Hello World
+# PhoneGap/jQuery Mobile Hello World
 
 This is a Hello Word for PhoneGap Build and jQuery Mobile. You can
 create your own mobile app by following these simple steps:
@@ -12,3 +11,7 @@ use public repos.
 4. Add new app to PhoneGap Build.
 5. Give your git repo URL and click pull button.
 6. Wait and you have a downloadable app.
+
+## Credits
+
+* Application icon http://findicons.com/icon/93539/web_browser?id=358197
